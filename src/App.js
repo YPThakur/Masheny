@@ -25,7 +25,7 @@ class App extends Component {
                     <h2>Welcome back.</h2>
                     <p>We are here to help.</p>
                 </div>
-                <img src={contentImage}/>
+                <img src={contentImage}/> 
             </div>
             <div class="login-form">
                 <h1>Sign In</h1>
