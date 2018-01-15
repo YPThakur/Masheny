@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import whiteLogo from './assets/images/white-logo.png';
+import contentImage from './assets/images/image-1.jpg';
 
 class App extends Component {
   render() {
-
+    document.body.className = 'login';
     return ( 
-      <div class="login">
+      <div class="">
             <header class="home">
         <div class="container">
             <div class="logo">
                 <a href="#">
-                    <img src="assets/images/white-logo.png" alt="logo"/>
+                    <img src={whiteLogo} alt="logo"/>
                 </a>
             </div>
         </div>
@@ -23,7 +25,7 @@ class App extends Component {
                     <h2>Welcome back.</h2>
                     <p>We are here to help.</p>
                 </div>
-                <img src="assets/images/image-1.jpg"/>
+                <img src={contentImage}/>
             </div>
             <div class="login-form">
                 <h1>Sign In</h1>
