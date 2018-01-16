@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import whiteLogo from './assets/images/white-logo.png';
-import contentImage from './assets/images/image-1.jpg';
-import Login from './login/login';
+//import Login from './login/Login';
+import { Switch, Route } from 'react-router-dom'
+import { Routes } from './web/Routes';
 
 class App extends Component {
 
@@ -12,7 +12,9 @@ class App extends Component {
     document.body.className = 'login';
     document.title = "Login";
     return (
-      <Login />
+      <div>
+        <Routes />
+      </div>
     );
   }
 }
