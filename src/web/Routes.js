@@ -16,7 +16,7 @@ export class Routes extends React.Component {
     render() {
         return (
             <Switch>
-                <Route exact path='/' component={HomeComponent} />
+                <Route exact path='/' component={LoginComponent} />
                 <Route exact path='/sign-in' component={LoginComponent} />
             </Switch>
         );
