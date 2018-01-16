@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 // Importing Components for routing
 import { LoginComponent } from './../Components/Login/LoginComponent';
 import { BorrowerComponent } from './../Components/Borrower/BorrowerComponent'
+import { LenderComponent } from '../Components/Lender/LenderComponent';
 
 
 export class Routes extends React.Component {
@@ -18,6 +19,7 @@ export class Routes extends React.Component {
             <Switch>
                 <Route exact path='/' component={LoginComponent} />
                 <Route exact path='/borrower' component={BorrowerComponent} />
+                <Route exact path='/lender' component={LenderComponent} />
             </Switch>
         );
     }

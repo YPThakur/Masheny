@@ -5,7 +5,7 @@ export class HeaderLogo extends React.Component {
 
     render() {
         return (
-            <div class="logo">
+            <div className="logo">
                 <a href="javascript:void(0);">
                     <img src={LogoInYellow} />
                 </a>
