@@ -1,15 +1,24 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-// Importing Component for routing
-import { Login } from './../login/Login';
+// Importing Components for routing
+import { LoginComponent } from './../Components/Login/LoginComponent';
+import { HomeComponent } from './../Components/Home/HomeComponent'
 
 
 export class Routes extends React.Component {
 
+    constructor() {
+        super();
+    }
+
+
     render() {
         return (
-            <Route exact path='/' component={Login} />
+            <Switch>
+                <Route exact path='/' component={HomeComponent} />
+                <Route exact path='/sign-in' component={LoginComponent} />
+            </Switch>
         );
     }
 }

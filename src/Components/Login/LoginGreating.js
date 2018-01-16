@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import WelcomeImage from './../assets/images/image-1.jpg'
+import WelcomeImage from './../../assets/images/image-1.jpg';
 
 export class LoginGreating extends React.Component {
 

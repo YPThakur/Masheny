@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import HeaderLogo from './../assets/images/white-logo.png';
+import HeaderLogo from './../../assets/images/white-logo.png';
 
 
 
