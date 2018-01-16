@@ -20,10 +20,6 @@ export class LenderComponent extends React.Component {
                     <StoriesSection />
                     <ChartSection />
                     <SolutionSection />
-
-
-
-
                 </div>
                 <FooterComponent />
             </div>

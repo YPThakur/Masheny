@@ -4,16 +4,16 @@ import BannerImage from './../../assets/images/lend-banner.jpg';
 export class BannerSection extends React.Component {
     render() {
         return (
-            <div class="banner-section leader-banner">
-                <div class="image-section">
+            <div className="banner-section leader-banner">
+                <div className="image-section">
                     <img src={BannerImage} />
                 </div>
-                <div class="banner-top">
+                <div className="banner-top">
                     <h2>Options. We all want them.</h2>
                     <p>The most innovative way to diversify your portfolio.</p>
                 </div>
 
-                <div class="banner-bottom">
+                <div className="banner-bottom">
                     <a href="javascript:void(0);">Become a Lender</a>
                 </div>
 

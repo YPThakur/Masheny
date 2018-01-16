@@ -5,6 +5,8 @@ import { Switch, Route } from 'react-router-dom';
 import { LoginComponent } from './../Components/Login/LoginComponent';
 import { BorrowerComponent } from './../Components/Borrower/BorrowerComponent'
 import { LenderComponent } from '../Components/Lender/LenderComponent';
+import { LoanRequestComponent } from '../Components/LoanRequest/LoanRequestComponent';
+import { LoanActivityComponent } from '../Components/LoanActivity/LoanActivityComponent';
 
 
 export class Routes extends React.Component {
@@ -20,6 +22,8 @@ export class Routes extends React.Component {
                 <Route exact path='/' component={LoginComponent} />
                 <Route exact path='/borrower' component={BorrowerComponent} />
                 <Route exact path='/lender' component={LenderComponent} />
+                <Route exact path='/loan-request' component={LoanRequestComponent} />
+                <Route exact path='/activity' component={LoanActivityComponent} />
             </Switch>
         );
     }

@@ -6,35 +6,35 @@ import StorySixImage from './../../assets/images/story-6.jpg';
 export class MashenySection extends React.Component {
     render() {
         return (
-            <div class="masheny-section">
-                <div class="container">
+            <div className="masheny-section">
+                <div className="container">
                     <h2>MASHENY is here when you need it.</h2>
-                    <div class="alternate-section">
-                        <div class="left-right">
-                            <div class="masheny-image">
+                    <div className="alternate-section">
+                        <div className="left-right">
+                            <div className="masheny-image">
                                 <img src={StoryFourImage} />
                             </div>
-                            <div class="masheny-content">
+                            <div className="masheny-content">
                                 <h3>Lorem ipsum dolor sit amet, consec. </h3>
                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
                             </div>
                         </div>
 
-                        <div class="left-right right-left">
-                            <div class="masheny-image">
+                        <div className="left-right right-left">
+                            <div className="masheny-image">
                                 <img src={StoryFiveImage} />
                             </div>
-                            <div class="masheny-content">
+                            <div className="masheny-content">
                                 <h3>Lorem ipsum dolor sit amet, consec. </h3>
                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
                             </div>
                         </div>
 
-                        <div class="left-right">
-                            <div class="masheny-image">
+                        <div className="left-right">
+                            <div className="masheny-image">
                                 <img src={StorySixImage} />
                             </div>
-                            <div class="masheny-content">
+                            <div className="masheny-content">
                                 <h3>Lorem ipsum dolor sit amet, consec. </h3>
                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
                             </div>

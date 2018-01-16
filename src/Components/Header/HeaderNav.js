@@ -5,9 +5,9 @@ export class HeaderNav extends React.Component {
         return (
             <div className="navigation">
                 <ul>
-                    <li><a href="javascript:void(0);">Borrow</a></li>
-                    <li><a href="javascript:void(0);">Lend</a></li>
-                    <li><a href="javascript:void(0);">Sign In</a></li>
+                    <li><a href={'/borrower'}>Borrow</a></li>
+                    <li><a href={'/lender'}>Lend</a></li>
+                    <li><a href={'/'}>Sign In</a></li>
                 </ul>
             </div>
         );

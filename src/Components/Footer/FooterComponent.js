@@ -7,8 +7,8 @@ export class FooterComponent extends React.Component {
     render() {
         return (
             <footer>
-                <div class="footer-container">
-                    <div class="container">
+                <div className="footer-container">
+                    <div className="container">
                         <FooterNav />
                         <FooterTextContent />
                     </div>

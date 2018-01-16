@@ -11,19 +11,14 @@ export class BorrowerComponent extends React.Component {
 
     render() {
         return (
-            <div class="main-wrapper">
+            <div className="main-wrapper">
                 <HeaderComponent />
-                <div class="body-content">
+                <div className="body-content">
                     <BannerSection />
                     <MoneySection />
                     <StorySection />
                     <MashenySection />
                     <InvestmentSection />
-
-
-
-                    
-
                 </div>
                 <FooterComponent />
             </div>
