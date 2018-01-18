@@ -7,6 +7,7 @@ import { BorrowerComponent } from './../Components/Borrower/BorrowerComponent'
 import { LenderComponent } from '../Components/Lender/LenderComponent';
 import { LoanRequestComponent } from '../Components/LoanRequest/LoanRequestComponent';
 import { LoanActivityComponent } from '../Components/LoanActivity/LoanActivityComponent';
+import { TestComponent } from '../TestComponent';
 
 
 export class Routes extends React.Component {
@@ -24,6 +25,7 @@ export class Routes extends React.Component {
                 <Route exact path='/lender' component={LenderComponent} />
                 <Route exact path='/loan-request' component={LoanRequestComponent} />
                 <Route exact path='/activity' component={LoanActivityComponent} />
+                <Route exact path='/test' component={TestComponent} />
             </Switch>
         );
     }

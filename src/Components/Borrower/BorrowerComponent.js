@@ -10,6 +10,7 @@ import { InvestmentSection } from './InvestmentSection';
 export class BorrowerComponent extends React.Component {
 
     render() {
+        console.log(sessionStorage.getItem('key'));
         return (
             <div className="main-wrapper">
                 <HeaderComponent />

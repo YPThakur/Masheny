@@ -6,8 +6,8 @@ export class LoginGreating extends React.Component {
 
     render() {
         return (
-            <div class="login-image">
-                <div class="overlay-content">
+            <div className="login-image">
+                <div className="overlay-content">
                     <h2>Welcome back.</h2>
                     <p>We are here to help.</p>
                 </div>

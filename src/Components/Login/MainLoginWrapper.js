@@ -10,10 +10,10 @@ export class MainLoginWrapper extends React.Component {
 
     render() {
         return (
-            <div class="main-wrapper">
+            <div className="main-wrapper">
                 <LoginHeader />
-                <div class="body-content">
-                    <div class="container clearfix">
+                <div className="body-content">
+                    <div className="container clearfix">
                         <LoginGreating />
                         <LoginForm />
                     </div>

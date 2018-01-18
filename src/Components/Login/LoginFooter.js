@@ -5,8 +5,8 @@ export class LoginFooter extends React.Component {
     render() {
         return (
             <footer>
-                <div class="container">
-                    <div class="copyright">
+                <div className="container">
+                    <div className="copyright">
                         <p>© 2018 Masheny, LLC. All rights reserved.</p>
                     </div>
                 </div>
