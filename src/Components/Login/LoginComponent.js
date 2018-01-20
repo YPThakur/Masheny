@@ -1,15 +1,29 @@
 import React, { Component } from 'react';
 import { MainLoginWrapper } from './MainLoginWrapper';
+import { Route, Redirect } from 'react-router-dom';
 import $ from 'jquery';
 import './../../assets/js/custom.js';
-
+const LoggedIn = localStorage.getItem('loggedIn') !== null ? JSON.parse(localStorage.getItem('loggedIn')) : null;
 export class LoginComponent extends React.Component {
 
     constructor() {
         super();
-        // Save data to sessionStorage
-        sessionStorage.setItem('key', 'value');
         this.documentTitle('Login');
+        this.state = {
+            isLoggedIn: LoggedIn !== null ? true : false,
+        };
+
+        this.redirectIfAuthenticated = this.redirectIfAuthenticated.bind(this);
+    }
+
+    componentDidMount() {
+        this.redirectIfAuthenticated();
+    }
+
+    redirectIfAuthenticated() {
+        if (this.state.isLoggedIn) {
+             <Redirect to="/borrower"/>
+        }
     }
 
     documentTitle(title) {
@@ -22,13 +36,11 @@ export class LoginComponent extends React.Component {
 
     //Renders Main login wrapper
     render() {
-        console.log(sessionStorage.getItem('key'));
         return (
-            <MainLoginWrapper />
+            <MainLoginWrapper></MainLoginWrapper>
         );
     }
 
 
 
 }
-
