@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 export class HeaderNav extends React.Component {
     render() {
         return (
             <div className="navigation">
                 <ul>
-                    <li><a href={'/borrower'}>Borrow</a></li>
-                    <li><a href={'/lender'}>Lend</a></li>
-                    <li><a href={'/'}>Sign In</a></li>
+                    <li><Link to="/borrower">Borrow</Link></li>
+                    <li><Link to="/lender">Lend</Link></li>
+                    <li><Link to="/">Sign In</Link></li>
                 </ul>
             </div>
         );

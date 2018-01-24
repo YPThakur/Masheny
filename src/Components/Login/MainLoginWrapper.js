@@ -9,8 +9,7 @@ import AuthService from './../../Services/AuthService';
 const loggedIn = true;
 export class MainLoginWrapper extends React.Component {
     constructor(props) {
-        super(props);
-
+        super(props); 
     }
 
 

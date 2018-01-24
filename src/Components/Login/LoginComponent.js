@@ -1,34 +1,38 @@
 import React, { Component } from 'react';
 import { MainLoginWrapper } from './MainLoginWrapper';
-import { Route, Redirect } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import $ from 'jquery';
 import './../../assets/js/custom.js';
-import AuthService from './../../Services/AuthService';  
+import AuthService from './../../Services/AuthService';
 const LoggedIn = false;
+const PageTitle = "Login";
 export class LoginComponent extends React.Component {
 
     constructor() {
         super();
-        this.documentTitle('Login');
         this.state = {
             isLoggedIn: LoggedIn !== null ? true : false,
-        }; 
+        };
     }
 
     componentDidMount() {
-        this.redirectIfAuthenticated();
-    } 
-
-    documentTitle(title) {
+        
+    }
+    componentWillMount() {
         // Setting up document title
-        document.title = title;
+        document.title = PageTitle;
 
         // Adds login class to the body
         document.body.className = 'login';
     }
 
+
+    componentWillUnmount() {
+        document.body.className = '';
+    }
+
     //Renders Main login wrapper
-    render() { 
+    render() {
         return (
             <div className="wrapper">
                 {AuthService.isAuthenticated()}
