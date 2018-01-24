@@ -5,11 +5,11 @@ const Authenticated = false;
 export class RedirectIfAuthenticated extends React.Component {
     constructor(props) {
         super(props);
-        this.situtation = this.situtation.bind(this);
+        this.situtation = this.situtation.bind(this); 
     }
 
     situtation() {
-        if (Authenticated) {
+        if (this.props.authenticated) {
             return <Redirect to={this.props.to} />
         } else {
             return <Redirect to={this.props.elseTo} />

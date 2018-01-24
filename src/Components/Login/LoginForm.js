@@ -33,8 +33,6 @@ export class LoginForm extends React.Component {
     // function to auto focus input on page load
     onLoadFocus() {
         this.onloadFocusField.focus();
-        console.log(localStorage.getItem('loggedIn'));
-        console.log(window);
     }
 
     // function to trigger when an input fields is get changed

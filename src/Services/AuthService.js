@@ -4,8 +4,8 @@ import { RedirectIfAuthenticated } from '../Middlewares/RedirectIfAuthenticated'
 
 class AuthService {
 
-    testFunction() {
-        return(<RedirectIfAuthenticated authenticated={false} to={'/borrower'} elseTo={'/'} />);
+    isAuthenticated() { 
+        return(<RedirectIfAuthenticated authenticated={true} to={'/borrower'} elseTo={'/asdfasdf'} />);
     }
 }
 
