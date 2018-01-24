@@ -1,4 +1,12 @@
 import React, { Component } from 'react';
+import { RedirectIfAuthenticated } from '../Middlewares/RedirectIfAuthenticated';
 
 
-export class AuthService {}
+class AuthService {
+
+    testFunction() {
+        return(<RedirectIfAuthenticated authenticated={false} to={'/borrower'} elseTo={'/'} />);
+    }
+}
+
+export default new AuthService();

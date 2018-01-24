@@ -3,7 +3,9 @@ import { LoginHeader } from './LoginHeader';
 import { LoginGreating } from './LoginGreating';
 import { LoginForm } from './LoginForm';
 import { LoginFooter } from './LoginFooter';
-
+import { Route, Redirect } from 'react-router';
+import AuthService from './../../Services/AuthService'; 
+const loggedIn = true;
 export class MainLoginWrapper extends React.Component {
     constructor(props) {
         super(props);
@@ -12,8 +14,9 @@ export class MainLoginWrapper extends React.Component {
 
     render() {
         return (
-            
+
             <div className="main-wrapper">
+            {AuthService.testFunction()}
                 <LoginHeader />
                 <div className="body-content">
                     <div className="container clearfix">

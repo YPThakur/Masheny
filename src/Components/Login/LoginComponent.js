@@ -3,7 +3,10 @@ import { MainLoginWrapper } from './MainLoginWrapper';
 import { Route, Redirect } from 'react-router-dom';
 import $ from 'jquery';
 import './../../assets/js/custom.js';
-const LoggedIn = localStorage.getItem('loggedIn') !== null ? JSON.parse(localStorage.getItem('loggedIn')) : null;
+
+//const Auth = new AuthService();
+const LoggedIn = false;
+//const LoggedIn = localStorage.getItem('loggedIn') !== null ? JSON.parse(localStorage.getItem('loggedIn')) : null;
 export class LoginComponent extends React.Component {
 
     constructor() {
@@ -12,7 +15,8 @@ export class LoginComponent extends React.Component {
         this.state = {
             isLoggedIn: LoggedIn !== null ? true : false,
         };
-
+//        AuthService.testFunction();
+        console.log();
         this.redirectIfAuthenticated = this.redirectIfAuthenticated.bind(this);
     }
 
@@ -22,7 +26,7 @@ export class LoginComponent extends React.Component {
 
     redirectIfAuthenticated() {
         if (this.state.isLoggedIn) {
-             <Redirect to="/borrower"/>
+            // <Redirect to="/borrower"/>
         }
     }
 
@@ -37,7 +41,7 @@ export class LoginComponent extends React.Component {
     //Renders Main login wrapper
     render() {
         return (
-            <MainLoginWrapper></MainLoginWrapper>
+            <MainLoginWrapper>dfdsffdsadfdsfasdf</MainLoginWrapper>
         );
     }
 
