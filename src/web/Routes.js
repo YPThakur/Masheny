@@ -27,6 +27,7 @@ export class Routes extends React.Component {
                 <Route exact path='/loan-request' component={LoanRequestComponent} />
                 <Route exact path='/activity' component={LoanActivityComponent} />
                 <Route exact path='/test' component={TestComponent} />
+                {/* Route for page not found */}
                 <Route path="*" component={NotFoundComponent}/>
             </Switch>
         );
