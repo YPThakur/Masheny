@@ -20,8 +20,7 @@ export class NotFoundComponent extends React.Component {
     }
     componentDidMount() {
         let overlayContent = document.getElementById('overlay-content');
-        this.setState({ 'overlayMargin': (window.innerHeight - overlayContent.offsetHeight) / 2 });
-        //this.overlayMargin = (window.innerHeight - overlayContent.offsetHeight) / 2;
+        this.setState({ 'overlayMargin': (window.innerHeight - overlayContent.offsetHeight) / 2 }); 
     }
     render() {
         return (
