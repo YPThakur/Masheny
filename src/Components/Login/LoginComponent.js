@@ -4,7 +4,7 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 import $ from 'jquery';
 import './../../assets/js/custom.js';
 import AuthService from './../../Services/AuthService';
-const LoggedIn = false;
+const LoggedIn = true;
 const PageTitle = "Login";
 export class LoginComponent extends React.Component {
 

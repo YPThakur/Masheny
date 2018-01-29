@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Redirect } from 'react-router';
 
-const Authenticated = false;
+
 export class RedirectIfAuthenticated extends React.Component {
     constructor(props) {
         super(props);

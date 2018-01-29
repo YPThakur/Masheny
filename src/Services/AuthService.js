@@ -7,6 +7,8 @@ class AuthService {
     isAuthenticated() { 
         return(<RedirectIfAuthenticated authenticated={false} to={'/borrower'} elseTo={'/'} />);
     }
+
+    
 }
 
 export default new AuthService();

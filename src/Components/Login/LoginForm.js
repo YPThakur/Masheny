@@ -50,6 +50,8 @@ export class LoginForm extends React.Component {
     // function {signIn} handles form submittion 
     signIn(event) {
         event.preventDefault();
+
+
         if (this.state.username === 'swap.yashp@gmail.com' && this.state.password === "9882426384") {
             localStorage.setItem('loggedIn', JSON.stringify(this.state));
             window.location.reload();
@@ -64,14 +66,15 @@ export class LoginForm extends React.Component {
 
 
     // Render component and it's children
-    render() {
+    render() { 
         return (
             <div className="login-form">
                 <h1>Sign In</h1>
                 <form action="javascript:void(0);" onSubmit={this.signIn}>
                     <div className="form-control">
                         <label>User ID</label>
-                        <input type="text" name="username" onChange={this.inputChange} value={this.state.username} ref={(onloadFocusField) => { this.onloadFocusField = onloadFocusField; }} />
+                        <input className="" type="text" name="username" onChange={this.inputChange} value={this.state.username} ref={(onloadFocusField) => { this.onloadFocusField = onloadFocusField; }} />
+                        <div className="form-control-feedback">Sorry, that username's taken. Try another?</div>
                     </div>
                     <div className="form-control">
                         <label>Password</label>
